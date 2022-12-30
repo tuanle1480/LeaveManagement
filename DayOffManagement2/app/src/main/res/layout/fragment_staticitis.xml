@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="10"
+    tools:context=".fragment.StaticitisFragment">
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchFormBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/conner_border_text_view"
+        app:searchIcon="@drawable/ic_baseline_search_24"
+        android:layout_weight="0.5"
+        app:theme="@style/AppSearchView"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="Search here..."
+        android:textColorHint="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/conner_border_text_view"
+        android:weightSum="2"
+
+        android:orientation="horizontal">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/cbLeaveFormFilter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Leave form"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/cbOTFormFilter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="OT form"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyForm"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9" />
+</LinearLayout>

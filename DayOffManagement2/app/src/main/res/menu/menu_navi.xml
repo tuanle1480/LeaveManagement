@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_home"
+            android:title="@string/nav_home"
+            android:icon="@drawable/ic_home"/>
+        <item android:id="@+id/nav_info"
+            android:title="@string/nav_info"
+            android:icon="@drawable/ic_people"/>
+        <item android:id="@+id/nav_cal"
+            android:title="@string/nav_register_leave"
+            android:icon="@drawable/ic_calendar"/>
+        <item android:id="@+id/nav_register_ot"
+            android:title="Register OT"
+            android:icon="@drawable/ic_baseline_bedtime_24"/>
+        <item android:id="@+id/nav_schedule_ot"
+            android:title="Schedules OT"
+            android:icon="@drawable/schedule_calendar_svgrepo_com"/>
+
+    </group>
+        <item android:title="@string/nav_ft">
+            <menu>
+                <item android:id="@+id/nav_dof"
+                    android:title="@string/nav_Doff"
+                    android:icon="@drawable/ic_caledit"/>
+
+                <item android:id="@+id/nav_approved"
+                    android:title="Approved Leave"
+                    android:icon="@drawable/check_mark_in_a_computer_window_svgrepo_com"/>
+
+                <item android:id="@+id/nav_sent_leave"
+                    android:title="Sent Leave Form"
+                    android:icon="@drawable/ic_baseline_present_to_all_24"/>
+
+                <item android:id="@+id/nav_sent_ot"
+                    android:title="Sent OT Form"
+                    android:icon="@drawable/ic_baseline_present_to_all_24"/>
+
+                <item android:id="@+id/nav_logout"
+                    android:title="@string/nav_logout"
+                    android:icon="@drawable/ic_logout"/>
+            </menu>
+        </item>
+</menu>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Leave Management</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_info">User</string>
+    <string name="nav_register_leave">Register Leave</string>
+    <string name="nav_Doff">Day Off</string>
+    <string name="nav_cp">Change Pass</string>
+    <string name="nav_logout">Logout</string>
+    <string name="nav_ft">Feature</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="register_leave">REGISTER LEAVE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
